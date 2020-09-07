@@ -44,11 +44,11 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D BUILD_EXAMPLES=ON ..    # yes the dots are real
 ```
 
-    Now set the number of CPU cores the package would build on and start the building process,
-    higher is better but spare at least 1 or 2 cores from total number of cores
+Now set the number of CPU cores the package would build on and start the building process,
+higher is better but spare at least 1 or 2 cores from total number of cores
 
-    ```make -j6``` # the number 6 is the number of CPU cores.
+```make -j6``` # the number 6 is the number of CPU cores.
 
-    Now to copy the built files to their respective locations do:
+Now to copy the built files to their respective locations do:
 
-    ```sudo make install```
+```sudo make install```
