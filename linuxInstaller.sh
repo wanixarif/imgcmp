@@ -1,16 +1,17 @@
 echo "Opencv and OpenCV-contrib Installer, created by Arif Wani"
 sleep 2
 cd ~
+ echo "cloning opencv"
 if [  ! -d "opencv"  ]; then
-    echo "cloning opencv"
     git clone https://github.com/opencv/opencv.git
     echo DONE
 else
     echo opencv source already downloaded
 fi
 
+
+echo "cloning opencv contrib"
 if [  ! -d "opencv_contrib"  ]; then
-    echo "cloning opencv contrib"
     git clone https://github.com/opencv/opencv_contrib
     echo DONE
 
@@ -18,8 +19,9 @@ else
     echo "opencv contrib source already downloaded"
 fi
 
+
+echo "creating build directory"
 if [  ! -d "opencvbuild"  ]; then
-    echo "creating build directory"
     mkdir opencvbuild
 
 else
@@ -53,4 +55,6 @@ echo "installing to /usr/local , requires superuser access"
 
 sudo make install
 
-echo "Installation complete"
+echo "INSTALLATION COMPLETE"
+
+sleep 2
